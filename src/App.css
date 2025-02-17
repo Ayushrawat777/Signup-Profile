@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body{
+  background-color: #000000;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 2px solid white;
+  font-size: 18px;
+  font-weight: 200;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f0f0f0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
   }
+}
+
+/* Signup Container */
+.signup-container {
+  background: rgb(0, 0, 0);
+  margin: 50px 225px;
+  padding: 40px;
+}
+
+/* Heading */
+.signup-container h2 {
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+/* Input Group */
+.input-group {
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  margin: 10px 0;
+}
+
+/* Button */
+button {
+  width: 15%;
+  padding: 10px;
+  border: none;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  
+}
+
+/* Profile Page */
+.profile-container {
+  padding: 40px;
+}
+
+.profile-container h2 {
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.profile-container p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.profile-container button {
+  width: 10%;
+  padding: 10px;
+  border: none;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.text{
+  padding: 10px 0;
+  font-weight: 100;
 }
