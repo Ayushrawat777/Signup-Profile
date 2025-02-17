@@ -133,7 +133,7 @@ const SignupForm = () => {
   useEffect(() => {
     if (isAuthenticated) {
       setMessage("Successfully Signed Up!");
-      navigate("/profile");
+      navigate("/Signup-Profile/profile");
     }
   }, [isAuthenticated, navigate]);
 

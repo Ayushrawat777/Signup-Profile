@@ -14,14 +14,14 @@ const Profile = () => {
   // ✅ Redirect to Signup if user is not authenticated
   useEffect(() => {
     if (!isAuthenticated) {
-      navigate("/");
+      navigate("/Signup-Profile");
     }
   }, [isAuthenticated, navigate]);
 
   const handleLogout = () => { localStorage.removeItem("user");
     alert("Logged out successfully!");
     dispatch(logout());
-    navigate("/");
+    navigate("/Signup-Profile");
   };
 
   if (!user1) return <p>Loading...</p>;
